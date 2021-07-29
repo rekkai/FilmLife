@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 body{
   background-color: #000000;
   padding: 0px;
@@ -10,4 +13,69 @@ body{
  height: 800px;
  padding: 0px;
  margin: 0px;
+}
+
+h1{
+  color: #fff;
+  font-size: 5rem;
+}
+nav{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.body-content{
+  position: relaive;
+  z-index: 0;
+  margin-top: 10rem;
+}
+ul{
+  display:block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li{
+  padding: .5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  }
+.mobile-menu > li{
+  font-size: 3rem;
+}
+.full-menu{
+  display: none;
+}
+.full-menu > li{
+  border-top: .5rem solid #333;
+}
+ .full-menu > li:hover{
+   background-color: #000000;
+}
+.mobile-menu:hover + .full-menu, .mobile-menu:active + .full-menu{
+  display: block;
+}
+.full-menu:hover{
+  display: block;
+}
+
+@media (min-width: 55em){
+  .mobile-menu{display:none;}
+  .full-menu{
+    display: inline-block;
+    border-radius: 2rem;
+  }
+  .full-menu > li{
+    display: inline-block;
+    padding: 1rem 5rem;
+    border-top: 0;
+    margin: 0 .5rem 0 0;
+    font-size: 3rem;
+  }
+  .full-menu > li:first-of-type{
+    border-radius: 2rem 0 0 2rem;
+  }
+  .full-menu > li:last-of-type{
+    border-radius: 0 2rem 2rem 0;
+  }
 }
