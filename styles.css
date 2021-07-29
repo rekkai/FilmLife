@@ -17,7 +17,15 @@ body{
 
 h1{
   color: #fff;
-  font-size: 5rem;
+  font-size: 10rem;
+}
+h2{
+  color: #fff;
+  font-size: 8rem;
+}
+h3{
+  color: #fff;
+  font-size: 6rem;
 }
 nav{
   position: absolute;
@@ -37,7 +45,7 @@ ul{
 }
 li{
   padding: .5rem 0;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 700;
   }
 .mobile-menu > li{
