@@ -11,3 +11,5 @@ over this week mostly from memory, I have a HIGH number
 of commits because I feel like I JUST NOW got GitHub figured
 out. Go Figure!
 
+One of my JavaScript features is the gradient background. I
+just wanted to something visually appealing.
