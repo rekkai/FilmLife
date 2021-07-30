@@ -90,3 +90,16 @@ li{
 
 @media only screen and (min-width: 600px) {}
 @media only screen and (min-width: 768px) {}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 75%;
+  float: left;
+}
+.main {
+  width: 25%;
+  float: left;
+}
