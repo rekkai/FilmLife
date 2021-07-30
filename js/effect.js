@@ -59,3 +59,15 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 }
 
 setInterval(updateGradient,10);
+
+$(document).ready(function () {
+
+  $('.menu').click(function() {
+      $('.overlay').toggleClass('anim');
+      $(this).addClass('open')
+  });
+
+  $('.open').click(function(){
+      $('.overlay').toggleClass('reverse-animation');
+  })
+});
