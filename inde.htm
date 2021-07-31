@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Rekkai's Film Life</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap:wrap;
@@ -46,28 +65,44 @@
 </style>
 </head>
 <body>
+<!-- Header -->
+<div class="header">
 <h1>Rekkai's Film File</h1>
 <p>I’ve been an extreme film buff since I was a child. My father had an affinity for Betamax. I started 
     the same way. But then it grew to VHS. And eventually DVD. And then Blu-ray.
      I loved watching all of the movies I could and being transported away into an engrossing story. 
      But I evolved to the point where not only do I collect them, but now I want to be in them. 
      In front of the camera, behind the camera and even write them.</p> 
-    
-<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div> 
 </div>
+    <h3>Responsive Image Grid</h3>
+    <p>Resize the browser window to see the responsive effect.</p>
+  </div>
+ 
 
-<p>I have divided this page into several sections, which include My Favorite Films, Experience as a 
-    Filmmaker and Passion for Writing.</p>
-
+<div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+</div>
+<div class="row">
+    <div class="column middle" style="background-color:rgb(235, 85, 85);">
+<p>My Favorite Films</p>
+    </div>
+    <div class="column middle" style="background-color:rgb(252, 42, 42);">
+<p>Experience as a Filmmaker</p>
+    </div>
+    <div class="column middle" style="background-color:rgb(235, 85, 85);">
+<p>Passion for Writing</p>
+    </div>
+</div>
 </body>
 </html>
