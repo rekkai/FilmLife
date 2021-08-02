@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="fav.png">
-    <title>Raiders Of The Lost Ark</title>
-</head>
+<title>Raiders Of The Lost Arc</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
 
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
 <body>
-    <header class="header">
-        <nav>
-            <ul class="mobile-menu">
-              <li>≡ Menu</li>
-            </ul>
-            <ul class="full-menu">
-            <ul class="nav-menu">
-                <li class="nav-item" id=item1><a href="index.htm">HOME</a>
-                </li>
-                <li class="nav-item" id=item2><a href="about.htm">TOP 10</a>
-                </li>
-                <li class="nav-item" id=item4><a href="filmmaker.htm">FILMMAKER</a>
-                </li>
-                <li class="nav-item" id=item5><a href="writer.htm">WRITER</a>
-                </li>
-                <li class="nav-item" id=item3><a href="contact.htm">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+	 
+    <ul class="topnav">
+        <li><a class="active" href="index.htm">Home</a></li>
+        <li><a href="filmmaker.htm">Experience As A Filmmaker</a></li>
+        <li><a href="writer.htm">Passion As A Writer</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+        <li class="right"><a href="about.htm">About</a></li>
+      </ul>
         <div id="page-title">
-            <h1 style="color:white;">Raiders Of The Lost Ark</h1>
+            <h1>Raiders Of The Lost Ark</h1>
         </div>
         <main>
             <div id="video-container">
                 <a href="https://www.youtube.com/watch?v=XkkzKHCx154 "><img src="images/raidersotla.jpg " width="40% " alt="Raiders Of The Lost Ark "></a>
                 <article>
-                    <p style="color:white;"><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
+                    <p><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
                         
-                    <p style="color:white;">I love this movie for a number of reasons.  Being already a fan of two movies Star Wars movies, another movies starring
+                    <p>I love this movie for a number of reasons.  Being already a fan of two movies Star Wars movies, another movies starring
                         Han Solo, aka Harrison Ford was a very welcome cinema experience. And that it was. I fancied myself a world traveler and
                         to see someone globe trotting and tomb raiding in some of the most insane adventures was a delight for any young person.
                     </p>
 
-                    <p style="color:white;">This movie follows the exploits of Dr. Henry "Indiana" Jones, Jr., an archaelogist and professor whose travels take him all over
+                    <p>This movie follows the exploits of Dr. Henry "Indiana" Jones, Jr., an archaelogist and professor whose travels take him all over
                         the world to find treasure to put on display at his University.  This movie has him in search of one of the most mythical treasures
                         of all time, the lost Ark of the Covenant, written about in the Bible to contain great power.  Indiana Jones adventures were the beginning
                         of a worldwide favorite franchise.
                     </p>
 
-                    <p style="color:white;">This movie stars Harrison Ford, John Rhys-Davies, Karen Allen and a young Alfred Molina.
+                    <p>This movie stars Harrison Ford, John Rhys-Davies, Karen Allen and a young Alfred Molina.
                     </p>
                 </article>
             </div>
         </main>
         <footer>
-            <h3 style="color:white;">website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
+            <h3>website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
                 <br>Contact me via <a href="mailto:diamondmynd@gmail.com ">email</a>
             </h3>
         </footer>
