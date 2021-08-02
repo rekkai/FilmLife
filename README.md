@@ -18,14 +18,11 @@ a crumpled heap.  But in taking it slow and rebuilding, minus the
 strong ambition, this is going better. Not as flashy but valiant.
 
 One of my media queries is I am using a responsive flexbox design 
-to make sure my page is mobile ready and desktop ready. I can write
-about what I had. I had a javascript and CSS navigation menu that glowed
-when you hovered over it and then had a drop down menu. The menu would
-shrink to a hamburger when you resized the screen for mobile. I had a 
-translucent changing background. I had a contact me page that worked decently.
-I had a few pictures on my home page. I had....
+to make sure my page is mobile ready and desktop ready. I have a 
+javascript and CSS navigation menu that changes color when you hover 
+over it. The menu will shrink to a hamburger when you resized the screen for mobile. 
+I have a contact me page that works decently.
 
-Thank you so much for your time.  I thought I would be able to finish, but
-in these wee few hours, everything I had... has went to hell. I thought I 
-wouldn't need more time.  And then I thought I would have more of the time
-I swore I didn't need.  So, this is what it comes down to...
+Thank you so much for your time.  I am glad I was able to finish. I gave
+everything I had. I thought I wouldn't need more time.  And then I thought 
+I would have more of the time I swore I didn't need.  So, this is what it comes down to...
