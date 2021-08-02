@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="fav.png">
-    <title>Jurassic Park</title>
-</head>
+<title>Jurassic Park</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
 
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
 <body>
-    <header class="header">
-        <nav>
-            <ul class="mobile-menu">
-              <li>≡ Menu</li>
-            </ul>
-            <ul class="full-menu">
-            <ul class="nav-menu">
-                <li class="nav-item" id=item1><a href="index.htm">HOME</a>
-                </li>
-                <li class="nav-item" id=item2><a href="about.htm">TOP 10</a>
-                </li>
-                <li class="nav-item" id=item4><a href="filmmaker.htm">FILMMAKER</a>
-                </li>
-                <li class="nav-item" id=item5><a href="writer.htm">WRITER</a>
-                </li>
-                <li class="nav-item" id=item3><a href="contact.htm">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+	 
+    <ul class="topnav">
+        <li><a class="active" href="index.htm">Home</a></li>
+        <li><a href="filmmaker.htm">Experience As A Filmmaker</a></li>
+        <li><a href="writer.htm">Passion As A Writer</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+        <li class="right"><a href="about.htm">About</a></li>
+      </ul>
         <div id="page-title">
-            <h1 style="color:white;">Jurassic Park</h1>
+            <h1>Jurassic Park</h1>
         </div>
         <main>
             <div id="video-container">
                 <a href="https://www.youtube.com/watch?v=lc0UehYemQA "><img src="images/jurassicpark.jpg " width="40% " alt="Jurassic Park "></a>
                 <article>
-                    <p style="color:white;"><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
+                    <p><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
                         
-                    <p style="color:white;">I love this movie for a number of reasons.  More than any movie on my list, this movie made you BELIEVE. Believe in the power of
+                    <p>I love this movie for a number of reasons.  More than any movie on my list, this movie made you BELIEVE. Believe in the power of
                         science and what was actually possible if someone was rich enough and God forbid, crazy enough to make it happen.
                     </p>
 
-                    <p style="color:white;">This movie follows the exploits of a team of paleontologists, Dr. Alan Grant and Dr. Ellie Sadler. The are coerced to take a vacation 
+                    <p>This movie follows the exploits of a team of paleontologists, Dr. Alan Grant and Dr. Ellie Sadler. The are coerced to take a vacation 
                         on the coast of Costa Rica to see something "truly extraordinary".  The wonder, oohs and awes are overwhelming as people take
                         their first gander at what looks like realistic dinosaurs. But anytime wild beasts, especially 65 million year old extinct ones are
                         taken for granted, all hell busts loose. The movie truly is fantastic in its scope, effects and sheer wonderment.
                     </p>
 
-                    <p style="color:white;">This movie stars Sir Richard Attenborough, Sam Neill, Laura Dern, Jeff Goldblum and Samuel L. Jackson.  This movie became one of the 
+                    <p>This movie stars Sir Richard Attenborough, Sam Neill, Laura Dern, Jeff Goldblum and Samuel L. Jackson.  This movie became one of the 
                         biggest grossing movies in history at the time it was released.
                     </p>
                 </article>
             </div>
         </main>
         <footer>
-            <h3 style="color:white;">website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
+            <h3>website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
                 <br>Contact me via <a href="mailto:diamondmynd@gmail.com ">email</a>
             </h3>
         </footer>
