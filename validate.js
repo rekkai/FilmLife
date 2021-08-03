@@ -1,67 +1,40 @@
-// To disable the form from submitting
-const form = document.querySelector('#form');
-// To display the error message
-const errorDiv = document.querySelector('#show-error');
-// To validate the username
-const username = document.querySelector('#username');
-// To validate the password
-const firstPassword = document.querySelector('#first-password');
-// To confirm the password
-const secondPassword = document.querySelector('#second-password');
+const submitBtn = document.getElementById("submit-btn");
 
-form.addEventListener('submit', (error) => {
-    // All validation checks are run in this method.   
-}
+const validate = (e) => {
+  e.preventDefault();
+  const username = document.getElementById("full-name");
+  const phonenumber = document.getElementById("phone-number");
+  const emailAddress = document.getElementById("email-address");
 
-// We will inlcude any and all errors in this string
-,let, incorrectInput = '')
+  if (username.value === "") {
+    alert("Please enter your full name.");
+    username.focus();
+    return false;
+  }
 
-const firstLetter = username.value[0];
+  if (phonenumber.value === "") {
+    alert("Please enter your phone number.");
+    phonenumber.focus();
+    return false;
+  }
 
-// Return true if first letter is uppercase
-const firstLetterIsUpperCase = (firstLetter === firstLetter.toUpperCase()); 
+  if (emailAddress.value === "") {
+    alert("Please enter your email address.");
+    emailAddress.focus();
+    return false;
+  }
 
-if (!firstLetterIsUpperCase) {
-    incorrectInput += ' The first letter of username must be uppercase.\n';
-}
+  if (!emailIsValid(emailAddress.value)) {
+    alert("Please enter a valid email address.");
+    emailAddress.focus();
+    return false;
+  }
 
-// Regex to see if a digit is in the username, returns true if there is
-const usernameIncludesDigit = /\d/.test(username.value); 
+  return true; // Can submit the form data to the server
+};
 
-if (!usernameIncludesDigit) {
-    incorrectInput += 'Username must include at least one digit.\n';
-}
+const emailIsValid = (email) => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
 
-const badPasswordLength = (firstPassword.value.length < 8 || firstPassword.value.length > 20);
-
-if (badPasswordLength) {
-    incorrectInput += ' The password should be within 8 to 20 characters.\n';
-}
-
-// Regex to see if a digit is in the username, returns true if there is
-const passwordIncludesUppercase = /[a-z]/.test(firstPassword.value); 
-
-if (!passwordIncludesUppercase) {
-    incorrectInput += ' The password should contain at least one uppercase character.\n';
-}
-
-if (firstPassword.value !== secondPassword.value) {
-    incorrectInput += 'The passwords do not match.\n';
-}
-
-if (incorrectInput !== "") {
-    // Change the error div tag to display the error message(s)
-    errorDiv.innerText = incorrectInput; 
-    // Change the color of the text to red
-    errorDiv.style.color = 'red'; 
-    // Prevent the form button from submitting again, before fixing the issues
-    error.preventDefault(); 
-}
-
-
-// Return true if first letter is uppercase
-const firstLetterIsUpperCase = (firstLetter === firstLetter.toUpperCase()); 
-
-if (!firstLetterIsUpperCase) {
-    incorrectInput += ' The first letter of username must be uppercase.\n';
-}
+submitBtn.addEventListener("click", validate);
