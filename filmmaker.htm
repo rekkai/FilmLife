@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Experience As A Filmmaker</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="fav.png">
+    <style>
+        body {margin: 0;}
+        
+        ul.topnav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        ul.topnav li {float: left;}
+        
+        ul.topnav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+        
+        ul.topnav li a.active {background-color: #04AA6D;}
+        
+        ul.topnav li.right {float: right;}
+        
+        @media screen and (max-width: 600px) {
+          ul.topnav li.right, 
+          ul.topnav li {float: none;}
+        }
+    </style>
+
 <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      background-color: #f1f1f1;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      background-color: dodgerblue;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+    </style>
 
-body {margin: 0;}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #04AA6D;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
-</style>
 </head>
 <body>
 	 
@@ -48,35 +80,42 @@ ul.topnav li.right {float: right;}
         <li><a href="contact.htm">Contact</a></li>
         <li class="right"><a href="about.htm">About</a></li>
       </ul>
-        <div id="gradient" />
+        
+      <header class="header">
         <div id="page-title">
             <h1>Rekkai's Film Life</h1>
         </div>
-        <main>
-            <div class="center-image">
-                <article>
-                   <img src="images/FILMLIFE.png " width="20% " alt=" Rekkai's Film Life ">
-                    <h2><b>Rekkai's Film Life</b></h2>
-    <section class="featured">
+        
+        <div class="row">
+          <div class="flex-item-left" style="background-color:rgb(3, 85, 139);">
+            <div id="video-container">   
+                   <img src="images/FILMLIFE.png " width="40% " alt=" Rekkai's Film Life ">
+
         <h2>Experience As A Filmmaker</h2>
-        <p>I have had alot of different experiences with film. I have had the pleasure of working as an actor in a few films and TV shows, including <a href="https://www.youtube.com/watch?v=uxcn3LJOXD0" target="_blank">SMOKETOWN</a>
-        , (notably episodes 5 and 6), which was shot here in Louisville. I have a long career of acting in plays for the stage, but my passion is creating them.  I have written, directed, produced, acted and edited several plays
-        over the last 7 years.  My desire is to create short films and enter film festivals.</p>
-    </section>
+        <p>I have had alot of different experiences with film. I have had the pleasure of working
+           as an actor in a few films and TV shows, including <a href="https://www.youtube.com/watch?v=uxcn3LJOXD0" target="_blank">SMOKETOWN</a>
+        , (notably episodes 5 and 6), which was shot here in Louisville. I have a long career of 
+        acting in plays for the stage, but my passion is creating them.  I have written, directed, 
+        produced, acted and edited several plays over the last 7 years.  My desire is to create 
+        short films and enter film festivals.</p>  
+  </div>     
 	</div>
-    <div id="video-container">
-        <a href="https://www.youtube.com/watch?v=L6mc-JRi8mU "><img src="images/smoketown1.jpg " width="40% " alt="Smoketown Episode 5 "></a>
-      <br>  
-      <a href="https://www.youtube.com/watch?v=uxcn3LJOXD0 "><img src="images/smoketown2.jpg " width="40% " alt="Smoketown Episode 6 "></a>
-      <br>
-      <a href="https://www.youtube.com/watch?v=uqPOXhNAySI "><img src="images/storytime.png " width="40% " alt="The Divine Comedy S2Ep2 "></a>
+
+  <div class="flex-item-right" style="background-color:rgb(69, 163, 252);">
+        <a href="https://www.youtube.com/watch?v=L6mc-JRi8mU "><img src="images/smoketown1.jpg " width="50% " alt="Smoketown Episode 5 "></a>
+      <p>SMOKETOWN EPISODE 5</p>
+      <a href="https://www.youtube.com/watch?v=uxcn3LJOXD0 "><img src="images/smoketown2.jpg " width="50% " alt="Smoketown Episode 6 "></a>
+      <p>SMOKETOWN EPISODE 6</p>
+      <a href="https://www.youtube.com/watch?v=uqPOXhNAySI "><img src="images/storytime.png " width="50% " alt="The Divine Comedy S2Ep2 "></a>
+      <p>KTV -THE DIVINE COMEDY - SEASON 2 EPISODE 2</p>
     </div>
- </main>
-        <footer>
-            <h3>website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
-                <br>Contact me via <a href="mailto:diamondmynd@gmail.com ">email</a>
-            </h3>
-        </footer>
+  </div>
+
+        <div class="footer">
+  <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
+  <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
+  </p>
+</div>
 
 </body>
 <script src="js/effect.js"></script>
