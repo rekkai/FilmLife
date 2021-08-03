@@ -19,9 +19,10 @@ strong ambition, this is going better. Not as flashy but valiant.
 
 One of my media queries is I am using a responsive flexbox design 
 to make sure my page is mobile ready and desktop ready. I have a 
-javascript and CSS navigation menu that changes color when you hover 
-over it. The menu will shrink to a hamburger when you resized the screen for mobile. 
-I have a contact me page that works decently.
+CSS navigation menu that changes color when you hover over it. 
+The menu will shrink to a hamburger when you resized the screen for mobile. 
+I have a contact me page that works decently. I also have a simple email form
+where I use JavaScript to input info for Exclusive information on the contact page.
 
 Thank you so much for your time.  I am glad I was able to finish. I gave
 everything I had. I thought I wouldn't need more time.  And then I thought 
