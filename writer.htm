@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Passion As A Writer</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="fav.png">
+    <style>
+        body {margin: 0;}
+        
+        ul.topnav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        ul.topnav li {float: left;}
+        
+        ul.topnav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+        
+        ul.topnav li a.active {background-color: #04AA6D;}
+        
+        ul.topnav li.right {float: right;}
+        
+        @media screen and (max-width: 600px) {
+          ul.topnav li.right, 
+          ul.topnav li {float: none;}
+        }
+    </style>
+
 <style>
-
-body {margin: 0;}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #04AA6D;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
-</style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      background-color: #f1f1f1;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      background-color: dodgerblue;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+    </style>
 </head>
 <body>
 	 
@@ -49,31 +80,35 @@ ul.topnav li.right {float: right;}
         <li class="right"><a href="about.htm">About</a></li>
       </ul>
                 
-        <div id="gradient" />
         <div id="page-title">
             <h1>Rekkai's Film Life</h1>
         </div>
-        <main>
-            <div class="center-image">
-                <article>
+        
+        <div class="row">
+          <div class="flex-item-left" style="background-color:rgb(3, 85, 139);">
+            <div id="video-container">
                    <img src="images/FILMLIFE.png " width="20% " alt=" Rekkai's Film Life ">
                     <h2><b>Rekkai's Film Life</b></h2>
-    <section class="featured">
+        </div>
+        </div>
+
+        <div class="flex-item-right" style="background-color:rgb(69, 163, 252);">
         <h2>Passion For Writing</h2>
         <p>I have been a writer since middle school.  In high school, I was hired by Disney to be a writer and like an idiot, I did not take the position because I was convinced I was an athlete.  I wasn't 
         aware that I could be more than one thing. I was dead set on being a college athlete, of which I was successful, but it was after a stint in the U.S. Army and a tour of the middle east.  I only
         wrote poems and journaled at this time.  I spent time imagining writing textbooks and tomes to improve schools and systems before I ventured in to writing novels and short stories.  
         I eventually made my way to plays and scripts and search my calendar for more time to read and more time to write.</p>
-    </section>
-	</div>
-<img src="images/Favefilms.png " width="20% " alt=" Rekkai Fave Films ">
-           
- </main>
-        <footer>
-            <h3>website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
-                <br>Contact me via <a href="mailto:diamondmynd@gmail.com ">email</a>
-            </h3>
-        </footer>
+    
+<p><img src="images/Favefilms.png " width="20% " alt=" Rekkai Fave Films "></p>
+</div>
+</div>
+
+
+<div class="footer">
+  <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
+  <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
+  </p>
+</div>
 
 </body>
 <script src="js/effect.js"></script>
