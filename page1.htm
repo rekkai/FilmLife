@@ -38,11 +38,44 @@
         }
     </style>
 
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      background-color: #f1f1f1;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      background-color: dodgerblue;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+    </style>
+    
+
     <title>The Godfather 2</title>
 </head>
 
 <body>
-
+    
     <ul class="topnav">
         <li><a class="active" href="index.htm">Home</a></li>
         <li><a href="filmmaker.htm">Experience As A Filmmaker</a></li>
@@ -55,12 +88,15 @@
         <div id="page-title">
             <h1>The Godfather 2</h1>
         </div>
-        <main>
-            <div id="video-container">
-                <a href="https://www.youtube.com/watch?v=9O1Iy9od7-A "><img src="images/godfather2.jpg " width="40% " alt="The Godfather 2 "></a>
-                <article>
-                    <p><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
-                        
+        <div class="row">
+        <div class="flex-item-left" style="background-color:rgb(3, 85, 139);">
+                <div id="video-container">
+                        <a href="https://www.youtube.com/watch?v=9O1Iy9od7-A "><img src="images/godfather2.jpg " width="40% " alt="The Godfather 2 "></a>
+                        <article>
+                            <p><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
+                </div>
+                </div>
+                <div class="flex-item-right" style="background-color:rgb(69, 163, 252);">
                     <p>I love this movie for a number of reasons.  Even though I love the first movie, the way this movie moved and retold the story. This is one of two sequels I have in my list because both of these
                         sophmore efforts surpassed the original offerings which were phenomenal in their own right.
                     </p>
@@ -73,15 +109,15 @@
                     <p>This movie stars Al Pacino, John Cazale and Robert DeNiro, who for the first time ever, garnered an Oscar for the same character played by another person (Marlon Brando) in the previous movie, 
                         who also won an Oscar for his portrayal.
                     </p>
-                </article>
+                </div>
             </div>
-        </main>
-        <div class="footer">
-            <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
-            <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
-            </p>
-          </div>
-</body>
-<script src="js/effect.js"></script>
-
-</html>
+            
+            <div class="footer">
+                <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
+                <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
+                </p>
+              </div>
+            
+            </body>
+            <script src="js/effect.js"></script>
+            </html>
