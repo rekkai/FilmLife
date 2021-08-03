@@ -26,3 +26,5 @@ I have a contact me page that works decently.
 Thank you so much for your time.  I am glad I was able to finish. I gave
 everything I had. I thought I wouldn't need more time.  And then I thought 
 I would have more of the time I swore I didn't need.  So, this is what it comes down to...
+
+Apreciative of 2nd Chances.
