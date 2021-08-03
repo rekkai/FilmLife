@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<script defer src="validate.js"></script>
 <style>
 * {
   box-sizing: border-box;
@@ -95,7 +96,7 @@ ul.topnav li.right {float: right;}
       </ul>
 
 <div class="header">
-<h1>Rekkai's Film File</h1>
+<h1>Rekkai's Film Life</h1>
 <p>I’ve been an extreme film buff since I was a child. My father had an affinity for Betamax. I started 
     the same way. But then it grew to VHS. And eventually DVD. And then Blu-ray.
      I loved watching all of the movies I could and being transported away into an engrossing story. 
@@ -135,6 +136,43 @@ ul.topnav li.right {float: right;}
     </div>
 </div>
 
+<h1>Form Validation Using JavaScript</h1>
+
+    <form id="form" action="/" method="GET">
+      <!-- We are only interested in client-side validation now -->
+
+      <!-- All the fields are required -->
+      <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" autofocus required />
+      </div>
+
+      <div>
+        <label for="first-password">Password: </label>
+        <input
+          type="password"
+          name="firstPassword"
+          id="first-password"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="second-password">Confirm Password: </label>
+        <input
+          type="password"
+          name="secondPassword"
+          id="second-password"
+          required
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="show-error">No validation error yet!</div>
+    <!--We will use this div to display validation error -->
+
 <div class="footer">
     <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
     <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
@@ -142,5 +180,4 @@ ul.topnav li.right {float: right;}
   </div>
 
 </body>
-<script src="js/effect.js"></script>
 </html>
