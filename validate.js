@@ -14,7 +14,7 @@ form.addEventListener('submit', (error) => {
 }
 
 // We will inlcude any and all errors in this string
-let incorrectInput = '';
+,let, incorrectInput = '')
 
 const firstLetter = username.value[0];
 
