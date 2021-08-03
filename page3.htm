@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>The Usual Suspects</title>
+<title>Stargate</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <style>
+    body {margin: 0;}
+    
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    ul.topnav li {float: left;}
+    
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
+    
+    ul.topnav li a.active {background-color: #04AA6D;}
+    
+    ul.topnav li.right {float: right;}
+    
+    @media screen and (max-width: 600px) {
+      ul.topnav li.right, 
+      ul.topnav li {float: none;}
+    }
+</style>
 
-body {margin: 0;}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+<style>
+* {
+  box-sizing: border-box;
 }
 
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
 
-ul.topnav li a.active {background-color: #04AA6D;}
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
 
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
@@ -51,12 +82,17 @@ ul.topnav li.right {float: right;}
         <div id="page-title">
             <h1>The Usual Suspects</h1>
         </div>
-        <main>
+        
+        <div class="row">
+            <div class="flex-item-left" style="background-color:rgb(3, 85, 139);">
             <div id="video-container">
                 <a href="https://www.youtube.com/watch?v=x3t0Nc6fg7w "><img src="images/usualsuspects.jpg " width="40% " alt="The Usual Suspects "></a>
                 <article>
                     <p><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
-                        
+            </div>
+            </div>
+                    
+            <div class="flex-item-right" style="background-color:rgb(69, 163, 252);">
                     <p>I love this movie for a number of reasons.  A classic who-dun it that has you guessing at every turn. Truly unpredictable and 
                         taught, thrilling joy ride in a hail of bullets and mental chess.
                     </p>
@@ -69,14 +105,14 @@ ul.topnav li.right {float: right;}
                     <p>This movie stars Gabriel Byrne, Chazz Palmintieri, Benicio Del Toro, Kevin Pollak, Stephen Baldwin and Kevin Spacey, who delivers a fantastic performance as the handi-capable criminal, 
                         Verbal Kent.
                     </p>
-                </article>
             </div>
-        </main>
-        <footer>
-            <h3>website content &copy;2021 Director/Writer/Author/Speaker - Rekkai Steed
-                <br>Contact me via <a href="mailto:diamondmynd@gmail.com ">email</a>
-            </h3>
-        </footer>
+            </div>
+        
+            <div class="footer">
+                <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
+                <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
+                </p>
+            </div>
 </body>
 <script src="js/effect.js"></script>
 
