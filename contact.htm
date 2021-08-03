@@ -69,6 +69,97 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.contact-form--cont {
+  background: lightblue;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 3px;
+  border: 2px solid darkblue;
+}
+
+#form input,
+#form input[type="text"],
+#form textarea,
+#form select {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  /*   outline: none; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#form input,
+#form input[type="text"],
+#form textarea,
+#form select {
+  color: darkblue;
+  text-align: left;
+  font-size: 1.25rem;
+  background: white;
+  border: 2px solid darkblue;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+#form label {
+  display: block;
+  padding: 10px 0;
+}
+
+#form label:after {
+  content: "";
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#form label span {
+  color: darkred;
+}
+
+.button,
+#form input,
+#form input[type="submit"] {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:hover {
+  background: blue;
+}
+
+
 </style>
 </head>
 <body>
@@ -114,40 +205,27 @@ input[type=submit]:hover {
 
 <h1>Sign Up for our Exclusive Film Information</h1>
 
-  <form id="form" action="/" method="GET">
-    <!-- We are only interested in client-side validation now -->
+<div class="contact-form--cont">
 
-    <!-- All the fields are required -->
-    <div>
-      <label for="username">Username: </label>
-      <input type="text" name="username" id="username" autofocus required />
-    </div>
+  <form id="form" class="contact-form">
 
-    <div>
-      <label for="first-password">Password: </label>
-      <input
-        type="password"
-        name="firstPassword"
-        id="first-password"
-        required
-      />
-    </div>
+    <label>Full Name: <span>(required)</span>
+      <input id="full-name" name="full-name" required="" type="text" placeholder="John Smith">
+    </label>
 
-    <div>
-      <label for="second-password">Confirm Password: </label>
-      <input
-        type="password"
-        name="secondPassword"
-        id="second-password"
-        required
-      />
-    </div>
+    <label>Phone Number: <span>(required)</span>
+      <input id="phone-number" name="phone-number" required="" type="text" placeholder="502-877-5309">
+    </label>
 
-    <button type="submit">Submit</button>
+    <label>Email Address: <span>(required)</span>
+      <input type="text" id="email-address" placeholder="jsmith@gmail.com" />
+    </label>
+
+    <input type="submit" value="Submit" id="submit-btn" class="button" />
+
   </form>
 
-  <div id="show-error">No validation error yet!</div>
-  <!--We will use this div to display validation error -->
+</div>
 
 </body>
 </html>
