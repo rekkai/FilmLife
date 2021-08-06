@@ -28,4 +28,7 @@ Thank you so much for your time.  I am glad I was able to finish. I gave
 everything I had. I thought I wouldn't need more time.  And then I thought 
 I would have more of the time I swore I didn't need.  So, this is what it comes down to...
 
-Apreciative of 2nd Chances.
+Apreciative of 2nd Chances. I made a few more alterations.  I changed the main menu nav to
+highlight the actual page that you are on.  I made all of the pages uniform in the headers and footers and
+graphics within the flexboxes.  I also removed the text and dropped posters of each of my Top 12 films in
+that are all clickable and lead to the pages that explain why I love these movies. Enjoy!
