@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dogma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <style>
+        body {margin: 0;}
+
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        ul.topnav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        ul.topnav li {float: left;}
+        
+        ul.topnav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+        
+        ul.topnav li a.active {background-color: #04AA6D;}
+        
+        ul.topnav li.right {float: right;}
+        
+        @media screen and (max-width: 600px) {
+          ul.topnav li.right, 
+          ul.topnav li {float: none;}
+        }
+    </style>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      background-color: #f1f1f1;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      background-color: dodgerblue;
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    
+    <ul class="topnav">
+        <li><a class="active" href="index.htm">Home</a></li>
+        <li><a href="filmmaker.htm">Experience As A Filmmaker</a></li>
+        <li><a href="writer.htm">Passion As A Writer</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+        <li class="right"><a href="about.htm">About</a></li>
+    </ul>
+
+    <header class="header">
+        <div id="page-title">
+            <h1>Dogma</h1>
+        </div>
+        <div class="row">
+        <div class="flex-item-left" style="background-color:rgb(3, 85, 139);">
+                <div id="video-container">
+                        <a href="https://www.youtube.com/watch?v=WL4VJmpwuP8 "><img src="images/dogma.jpg " width="40% " alt="Dogma "></a>
+                        <article>
+                            <p><strong>CLICK ON THE PICTURE TO SEE THE TRAILER FOR THE MOVIE</strong></p>
+                </div>
+                </div>
+                <div class="flex-item-right" style="background-color:rgb(69, 163, 252);">
+                    <p>I love this movie for a number of reasons.  I love Kevin Smith movies.  Personal preference. I love that he puts all of his 
+                        friends in his movies, even if for a small part.  I like that he is a self professed nerd but is also an accomplished writer 
+                        of comic books, TV shows and movies, an actor, Director, Producer and Entrepreneur who seems to still be himself but in a 
+                        different tax bracket.
+                    </p>
+
+                    <p>This movie follows the adventure and journey of the last scion and two fallen angels, Azrael and Loki. The movie is based on 
+                        the premise of an alleged loophole in Catholic Dogma that would allow the angels who have been banished to Earth to return to 
+                        Heaven, however that would unmake all of reality by proving God wrong.  The movie was HIGHLY controversial, yet thought provoking 
+                        and was condemned by many before seeing a single fram which kind of proves the point of blind zeal.
+                    </p>
+
+                    <p>This movie stars Linda Fiorentino, George Carlin, Ben Affleck, Matt Damon, Chris Rock, Alan Rickman, Kevin Smith, Salma Hayek, 
+                        and many more stars and Kevin Smith's friends and characters from other movies.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>website content &copy;2021 - Director/Writer/Author/Speaker - Rekkai Steed</p>
+                <p>contact me via <a href="mailto:diamondmynd@gmail.com ">email</a></p>
+                </p>
+              </div>
+            
+            </body>
+            <script src="js/effect.js"></script>
+            </html>
